@@ -1,0 +1,72 @@
+.board-lists-container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    margin: 20px 0; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    padding: 10px;
+    
+}
+
+.board-lists-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #0d4c3b; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 10px; 
+    width: 250px; 
+    text-align: center; 
+    font-size: 1.2rem; 
+    transition: transform 0.3s;
+    overflow: hidden; 
+}
+
+.card h2 {
+    font-size: 1.5rem; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.task-container {
+    max-height: 200px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    scrollbar-width: thin; 
+    margin-top: 15px; 
+    text-align: left;
+    scrollbar-width: none;
+}
+
+
+.task-container::-webkit-scrollbar {
+    width: 8px; 
+}
+.board-lists-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.task-container::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+}
+
+.task-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.task-container p {
+    margin: 5px 0;
+    color: white; 
+    text-align: center;
+
+}
